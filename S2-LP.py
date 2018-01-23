@@ -528,10 +528,7 @@ class S2_LP_Base:
 		return self.read(REG.PCKTCTRL4, 8)
 	
 	# Bits LEN_WID
-	# The number of bytes used for the length field: 
-	#         - 0: 1 byte
-	#         - 1: 2 bytes. 
-	
+	# The number of bytes used for the length field 
 	# Bits reserved_0
 	# Bits ADDRESS_LEN
 	# 1: include the ADDRESS field in the packet. 
@@ -548,19 +545,9 @@ class S2_LP_Base:
 		return self.read(REG.PCKTCTRL3, 8)
 	
 	# Bits PCKT_FRMT
-	# Format of packet: 
-	#         - 0: Basic
-	#         - 1: 802.15.4g
-	#         - 2: UART OTA
-	#         - 3: Stack
-	#         (see section 6 ) 
-	
+	# Format of packet (see section 6) 
 	# Bits RX_MODE
-	# RX mode: 
-	#         - 0: normal mode
-	#         - 1: direct through FIFO
-	#         - 2: direct through GPIO 
-	
+	# RX mode 
 	# Bits FSK4_SYM_SWAP
 	# Select the symbol mapping for 4(G)FSK. 
 	# Bits BYTE_SWAP
